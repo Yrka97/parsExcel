@@ -43,13 +43,14 @@ class readExcel:
         except FileNotFoundError:
             print('Ошибка файл не найден')
         sheet = rb.sheet_by_index(0)
+        obj1.writeFile('some.txt', '\n')
         for rownum in range(sheet.nrows):
             row = sheet.row_values(rownum)
             stringRow = str(row)
             stringRow = stringRow.replace('[', '')
             stringRow = stringRow.replace(']', '')
             stringRow = stringRow.replace("'", "")
-            if rownum!=0 and rownum !=1 and rownum !=2:
+            if rownum!=0 and rownum !=1 and rownum !=2 and rownum!=23:
                 obj1.writeFile('some.txt', stringRow)
                 obj1.writeFile('some.txt', '\n')
                 print(stringRow)
