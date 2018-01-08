@@ -57,5 +57,5 @@ class readExcel:
 
 obj1 = readExcel()
 obj1.writeInfromToFile()
-obj1.writeExcelQuestions('1.xls')
-obj1.writeOtherInf('1.xls')
+obj1.writeExcelQuestions('ИИ1.xls')
+obj1.writeOtherInf('ИИ1.xls')
