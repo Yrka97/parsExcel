@@ -49,9 +49,10 @@ class readExcel:
             stringRow = stringRow.replace('[', '')
             stringRow = stringRow.replace(']', '')
             stringRow = stringRow.replace("'", "")
-            #obj1.writeFile('some.txt', stringRow)
-            #obj1.writeFile('some.txt', '\n')
-            print(stringRow)
+            if rownum!=0 and rownum !=1 and rownum !=2:
+                obj1.writeFile('some.txt', stringRow)
+                obj1.writeFile('some.txt', '\n')
+                print(stringRow)
 
 obj1 = readExcel()
 obj1.writeInfromToFile()
